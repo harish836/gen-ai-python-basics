@@ -86,10 +86,53 @@ print(type(True))
 print(type(100))
 
 #Write a program that swaps the values of two variables a=5 and b=10 without using a third variable.
-a=5
-b=10
+#a=5
+#b=10
 
 #Create a variable called temperature = 98.6 and print: 'Your temperature is X degrees.'
 
 temperature = 98.6
 print("your temperature is ", temperature, "degrees")
+
+
+a, b = 17, 5
+print(a + b) # Addition → 22
+print(a - b) # Subtraction → 12
+print(a * b) # Multiplication → 85
+print(a / b) # Division → 3.4 (always float)
+print(a // b) # Floor division → 3 (drops decimal)
+print(a % b) # Modulus → 2 (remainder)
+print(a ** b) #Exponent → 1419857 (17 to the power 5)
+
+x, y = 10, 20
+print(x == y) # Equal to? → False
+print(x != y) # Not equal to? → True
+print(x < y) # Less than? → True
+print(x > y) # Greater than? → False
+print(x <= 10) # Less than or equal → True
+print(x >= 20) # Greater or equal → False
+
+age = 15
+has_id = True
+print(age >= 18 and has_id) # False (age fails) --> both are true
+print(age >=18 or has_id) # True (has_id is True) --> either is true
+print(not has_id) # False
+can_enter = (age >= 13) and (has_id == True)
+print("Can enter:",can_enter)
+
+# Python follows BODMAS: Brackets, Orders, Division, # Multiplication, Addition, Subtraction
+result1 = 2 + 3 * 4 # 14 (not 20)
+result2 = (2 + 3) * 4 # 20 (brackets first)
+result3 = 2 ** 3 + 1 # 9 (power first)
+result4 = 10 / 2 + 3 * 2 # 11.0
+print(result1,result2, result3, result4)
+
+
+x = int(input("Enter number of apples you want to buy: "))
+totalcost = x*5
+print(totalcost)
+
+
+print(5 > 3 and 10 < 8)
+print( (2**8) - (100 // 3) + (55 % 7))
+print(256-33+6)
