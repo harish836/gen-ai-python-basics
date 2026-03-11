@@ -29,3 +29,67 @@ print (5+4*3)
 
 print("Harish Mittal",47,"Maths")
 
+
+name = "Harish"
+age = 47
+height = 5.9
+is_student = False
+
+print (name)
+print (age)
+print(height)
+print (is_student)
+
+
+print (type(name), type(age), type(height), type(is_student))
+
+score = 0
+print("Start:", score)
+score = 50
+print("After level 1:", score)
+print ("After level 2:", score + 30) # add 30 to current score print("After level 2:", score)
+
+a, b, c = 10, 20, 30
+print(a, b, c) # Assign same value to many variables x = y = z = 100
+x=a
+y=b
+z=c
+print(x, y, z)
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: ")) # convert string to int!
+print("Hello,", name, "You are", age, "years old")
+
+"""
+below is the exercise for the second class of day 2 learning Python,
+I am solving 4 questions here
+"""
+# Create variables for your name, age, city, and whether you like cricket. Print all of them.
+name = "Harish"
+age = 47
+city = "Gurugram"
+like_cricket = True
+print(name, age, city, like_cricket)
+
+#Ask the user to enter two numbers and print their sum.
+
+nbr1 = int(input("Enter first number: "))
+nbr2 = int(input("Enter second number: "))
+sum = nbr1 + nbr2
+print(sum)
+
+#What is the data type of: 3.0, 'True', True, 100? Check with type().
+
+print(type(3.0))
+print(type('True'))
+print(type(True))
+print(type(100))
+
+#Write a program that swaps the values of two variables a=5 and b=10 without using a third variable.
+a=5
+b=10
+
+#Create a variable called temperature = 98.6 and print: 'Your temperature is X degrees.'
+
+temperature = 98.6
+print("your temperature is ", temperature, "degrees")
