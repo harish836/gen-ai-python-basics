@@ -26,7 +26,7 @@ print (3)
 print (5+4*3)
 
 #print your full name , age and favourite subject using single print statement
-
+"""
 print("Harish Mittal",47,"Maths")
 
 
@@ -60,10 +60,10 @@ name = input("Enter your name: ")
 age = int(input("Enter your age: ")) # convert string to int!
 print("Hello,", name, "You are", age, "years old")
 
-"""
+
 below is the exercise for the second class of day 2 learning Python,
 I am solving 4 questions here
-"""
+
 # Create variables for your name, age, city, and whether you like cricket. Print all of them.
 name = "Harish"
 age = 47
@@ -75,8 +75,8 @@ print(name, age, city, like_cricket)
 
 nbr1 = int(input("Enter first number: "))
 nbr2 = int(input("Enter second number: "))
-sum = nbr1 + nbr2
-print(sum)
+Sum = nbr1 + nbr2
+print(Sum)
 
 #What is the data type of: 3.0, 'True', True, 100? Check with type().
 
@@ -221,3 +221,54 @@ print(fruits)
 print(fruits.pop())
 fruits.pop()
 print(fruits)
+
+
+marks = [85,92,78,95,88]
+print(max(marks))
+print(min(marks))
+print(sum(marks))
+print(sorted(marks))
+
+matrix = [[1,3,5,7,8], ["hari", "pari", "dari", "bari", "nari"]]
+print(matrix)
+print(matrix[0])
+print(matrix[1][2])
+
+"""
+
+a=[1,2,3]
+b=[4,5,6]
+print(a+b)
+print(a*3)
+print(3 in a)
+
+c=a.copy()
+print(c)
+
+secret = 42
+guess = 0
+while guess != secret:
+    guess = int(input("Guess the number: "))
+    if guess < secret:
+        print("Too low!")
+    elif guess > secret:
+        print("Too high!")
+    else: print("Correct! Well done!")
+
+for i in range(1, 20):
+    print(f"current value of i is {i}")
+    if i == 7: break
+print(f"value of {i} has reached breakpoint")
+
+
+for i in range(1, 6):
+    for j in range(1, 6):
+        print(f"{i*j:3}", end="") # :3 = width of 3
+print() # newline after each row # Output: # 1 2 3 4 5 # 2 4 6 8 10 # 3 6 9 12 15 ...etc.
+
+x, y, z = (10, 20, 30)
+print(x, y, z)
+
+days = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+
+print(days)
